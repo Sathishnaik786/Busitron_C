@@ -1,8 +1,6 @@
-
 import './App.css';
 import First from './Searchbar/First';
-
-import Homepage from './components/Homepage';
+import "bootstrap-icons/font/bootstrap-icons.min.css"
 function App() {
   return (
     <div className="App">
