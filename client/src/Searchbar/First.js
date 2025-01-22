@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom';
 
 function First() {
     let [inp, setInp] = useState("");
@@ -125,8 +126,8 @@ function First() {
     return (
         <div>
             <nav className="navbar bg-body-tertiary">
-                <div className="container-fluid">
-                    <form className="d-flex" role="search">
+                <div className="container-fluid ">
+                    <form className="d-flex d-flex justify-content-center mx-auto" role="search">
                         <input
                             className="form-control me-2"
                             type="search"
@@ -139,7 +140,31 @@ function First() {
                             Search
                         </button>
                     </form>
+                    <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-person-circle"></i></button>
+
+<div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div className="offcanvas-header">
+    <h5 className="offcanvas-title" id="offcanvasRightLabel">user name</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div className="offcanvas-body">
+    <ul>
+        
+    </ul>
+  </div>
+</div>
+                {/* <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> */}
                 </div>
+                
             </nav>
             <section>
                 <p>{btn}</p>
