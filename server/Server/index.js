@@ -4,6 +4,7 @@ const app = express();
 app.get('/', (req, res) => {
     res.send('Hello, Node.js!');
     res.send('Hello, Node.js!');
+    res.send('Hello, Node.js!');
 });
 
 const PORT = 3000;
