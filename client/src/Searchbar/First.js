@@ -126,6 +126,7 @@ function First() {
         <div>
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
+                    
                     <form className="d-flex" role="search">
                         <input
                             className="form-control me-2"
@@ -151,8 +152,8 @@ function First() {
                             return (
                                 <div className="col-md-4 mb-4" key={index}>
                                     <div className="card h-100">
-                                        
-                                        <video width="320" height="240"  className="card-img-top" controls>
+
+                                        <video width="320" height="240" className="card-img-top" controls>
                                             <source src={val.videoUrl} type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
@@ -162,7 +163,7 @@ function First() {
                                             <p className="card-text text-truncate" style={{ maxHeight: "60px", overflow: "hidden" }}>
                                                 {val.description}
                                             </p>
-                                          
+
                                         </div>
                                     </div>
                                 </div>
