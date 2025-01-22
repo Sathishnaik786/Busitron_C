@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Plan from './components/Plan';
+import Next from './Next';
+import Payment from './components/Payment';
+ // The new Next.js page
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>WELCOME To BUSITRON </code>
-        </p>
-        <a
-          className="App-link"
-          href="https://www.busitron.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lets Start The Tasking
-        </a>
-      </header>
-    </div>
+    <Router>
+
+      <Routes>
+        <Route path="/" element={<Plan />} />
+      
+        <Route path="/next" element={<Next />} />
+        <Route path="/payment" element={<Payment />} /> 
+      </Routes>
+    </Router>
   );
 }
 
