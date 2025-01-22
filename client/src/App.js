@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <code>WELCOME To BUSITRON </code>
+          <h1>this is pallavi</h1>
         </p>
         <a
           className="App-link"
