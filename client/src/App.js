@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
       <Homepage />
         <p>
-          <code>WELCOME To BUSITRON </code>
+          <code>WELCOME To BUSITRON Hyd </code>
         </p>
         <a
           className="App-link"
